@@ -1,0 +1,93 @@
+    // lucyNjoki
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a21794;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #app {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #a95016;
+            border: 1px solid #6a2a84;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #1d8b42;
+            border-radius: 3px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #9f2fba;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #errorMessage {
+            font-weight: bold;
+            margin-top: 10px;
+            color: red;
+        }
+
+        #secretMessage {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Access Secret Message</h1>
+    <div id="app">
+        <form id="inputForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            
+            <label for="zipCode">Zip Code:</label>
+            <input type="text" id="zipCode" required>
+            
+            <button type="button" onclick="validateAndAccessSecretMessage()">Submit</button>
+        </form>
+        
+        <p id="errorMessage"></p>
+        <p id="secretMessage" style="display: none;">This is the secret message!</p>
+    </div>
+
+
+    <script src="string 3.2 user input validation.js"></script>
+    
+</body>
+</html>
